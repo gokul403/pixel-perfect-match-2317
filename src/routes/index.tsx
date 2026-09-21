@@ -190,10 +190,10 @@ const collections = [
 ];
 
 const products = [
-  { image: necklaceImage, name: "Diamond Necklace Collection", subtitle: "Floral, leaf & chandelier designs", material: "22K Gold Â· Diamond PavÃ©", delay: 0 },
-  { image: ringsBanglesImage, name: "Rings & Bangles", subtitle: "Textured, crossover & geometric", material: "Yellow Â· Rose Â· White Gold", delay: 1 },
-  { image: earringsImage, name: "Earrings", subtitle: "Jimkis, chandeliers & hoops", material: "22K Gold Â· Ruby Â· Diamond", delay: 2 },
-  { image: goldCoinsImage, name: "Gold Coins & Bars", subtitle: "BIS hallmarked investment gold", material: "24K 999.9 Fine Gold", delay: 3 },
+  { image: necklaceImage, name: "Diamond Necklace Collection", subtitle: "Floral, leaf & chandelier designs", material: "22K Gold· Diamond Pav", delay: 0 },
+  { image: ringsBanglesImage, name: "Rings & Bangles", subtitle: "Textured, crossover & geometric", material: "Yellow· Rose· White Gold", delay: 1 },
+  { image: earringsImage, name: "Earrings", subtitle: "Jimkis, chandeliers & hoops", material: "22K Gold · Ruby · Diamond", delay: 2 },
+  { image: goldCoinsImage, name: "Gold Coins & Bars", subtitle: "BIS hallmarked investment gold", material: "24K Fine Gold", delay: 3 },
 ];
 
 function HomePage() {
@@ -668,7 +668,7 @@ function HomePage() {
             </div>
             <div className="grid gap-0 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                { num: "01", title: "Design", text: "From considered sketch to refined digital model â€” each piece begins with purpose." },
+                { num: "01", title: "Design", text: "From considered sketch to refined digital model each piece begins with purpose." },
                 { num: "02", title: "Precision Manufacturing", text: "CNC & advanced machinery bring perfect symmetry, consistency, and finish to every piece." },
                 { num: "03", title: "Quality Control", text: "Every detail is inspected under magnification before final polishing and finishing." },
                 { num: "04", title: "Certification", text: "Gold purity (BIS hallmarked) and diamond grades (IGI certified) are documented for every piece." },
@@ -708,7 +708,7 @@ function HomePage() {
               },
               {
                 icon: Gem,
-                title: "â‚¹6.94 Crore in Assets",
+                title: "6.94 Crore in Assets",
                 text: "Backed by substantial property assets including 269.5 cents residential land and a dedicated 2,000 Sq.Ft manufacturing unit.",
                 delay: 3,
               },
@@ -721,13 +721,13 @@ function HomePage() {
               {
                 icon: ArrowRight,
                 title: "B2B & Export Ready",
-                text: "From domestic wholesale distribution to global export operations â€” we serve retailers, distributors, and direct customers.",
+                text: "From domestic wholesale distribution to global export operations we serve retailers, distributors, and direct customers.",
                 delay: 2,
               },
               {
                 icon: Phone,
                 title: "Personal Consultation",
-                text: "Our team offers personal assistance for custom orders, bridal sets, and investment gold â€” reach us directly at any time.",
+                text: "Our team offers personal assistance for custom orders, bridal sets, and investment gold reach us directly at any time.",
                 delay: 3,
               },
             ].map(({ icon: Icon, title, text, delay }) => (
@@ -771,9 +771,9 @@ function HomePage() {
           </div>
           <div className="grid gap-5 md:grid-cols-3">
             {[
-              { image: legacyNecklaceImage, eyebrow: "01 Â· Light", title: "For the moments that begin quietly." },
-              { image: legacyRingImage, eyebrow: "02 Â· Legacy", title: "For the traditions worth carrying forward." },
-              { image: earringsImage, eyebrow: "03 Â· Becoming", title: "For every version of who you are." },
+              { image: legacyNecklaceImage, eyebrow: "01· Light", title: "For the moments that begin quietly." },
+              { image: legacyRingImage, eyebrow: "02· Legacy", title: "For the traditions worth carrying forward." },
+              { image: earringsImage, eyebrow: "03· Becoming", title: "For every version of who you are." },
             ].map(({ image, eyebrow, title }, i) => (
               <article key={eyebrow} className={`group reveal reveal-delay-${i + 1}`}>
                 <div className="overflow-hidden">
