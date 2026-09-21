@@ -361,7 +361,7 @@ function HomePage() {
                   className="animate-rise-in font-cinzel text-[10px] font-semibold uppercase tracking-[0.28em]"
                   style={{ color: "#C8960C" }}
                 >
-                  The GJS Signature Collection Â· Manalur, Thrissur
+                  The GJS Signature Collection· Manalur, Thrissur
                 </p>
 
                 {/* Gold rule */}
