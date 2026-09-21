@@ -172,14 +172,14 @@ function FooterGroup({ title, links }: { title: string; links: string[] }) {
 /* â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 const tickerMessages = [
-  "âœ¦ 22K & 24K BIS Hallmarked Gold",
-  "âœ¦ Precision CNC Bangles",
-  "âœ¦ Diamond Jewellery â€” IGI Certified",
-  "âœ¦ Antique Temple Jewellery",
-  "âœ¦ Investment Grade Gold Coins",
-  "âœ¦ Jimkis & Traditional Earrings",
-  "âœ¦ Private Limited Company Â· Est. Manalur, Thrissur",
-  "âœ¦ Wholesale & Export Operations",
+  " 22K & 24K BIS Hallmarked Gold",
+  " Precision CNC Bangles",
+  " Diamond Jewellery IGI Certified",
+  " Antique Temple Jewellery",
+  " Investment Grade Gold Coins",
+  " Jimkis & Traditional Earrings",
+  " Private Limited Company· Est. Manalur, Thrissur",
+  " Wholesale & Export Operations",
 ];
 
 const collections = [
