@@ -361,7 +361,7 @@ function HomePage() {
                   className="animate-rise-in font-cinzel text-[10px] font-semibold uppercase tracking-[0.28em]"
                   style={{ color: "#C8960C" }}
                 >
-                  The GJS Signature Collection· Manalur, Thrissur
+                  The GJS Signature Collection
                 </p>
 
                 {/* Gold rule */}
@@ -643,7 +643,7 @@ function HomePage() {
             <div className="reveal reveal-delay-4 mt-10 grid grid-cols-2 gap-4 border-t border-border pt-8">
               {[
                 { label: "Constitution", value: "Private Limited Company" },
-                { label: "Designation", value: "Managing Director" },
+                // { label: "Designation", value: "Managing Director" },
                 { label: "Activity", value: "Manufacturing of Gold Jewellery" },
                 { label: "Experience", value: "20 Years Managerial" },
               ].map(({ label, value }) => (
@@ -875,7 +875,7 @@ function HomePage() {
                     {[
                       { label: "Name of Industry", value: "GJS Jewellers Private Limited" },
                       { label: "Constitution", value: "Private Limited Company" },
-                      { label: "Designation", value: "Managing Director" },
+                      // { label: "Designation", value: "Managing Director" },
                       { label: "Existing Activity", value: "Manufacturing of Gold Jewellery" },
                       { label: "Location", value: "XII/343, Manalur, Thrissur, Kerala" },
                       { label: "Professional Experience", value: "20 Years Managerial Experience in Manufacturing Industry" },
