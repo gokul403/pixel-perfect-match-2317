@@ -14,8 +14,8 @@ import legacyRingImage from "@/assets/gjs-ring.jpg";
 export const Route = createFileRoute("/")(({
   head: () => ({
     meta: [
-      { title: "GJS Jewellers | Crafted for Generations Â· Thrissur, Kerala" },
-      { name: "description", content: "GJS Jewellers â€” precision-crafted gold and diamond jewellery from Thrissur, Kerala. 22K gold necklaces, rings, bangles, earrings, antique jewellery and investment gold coins. BIS certified. Private Limited company." },
+      { title: "GJS Jewellers | Crafted for Generations· Thrissur, Kerala" },
+      { name: "description", content: "GJS Jewellers” precision-crafted gold and diamond jewellery from Thrissur, Kerala. 22K gold necklaces, rings, bangles, earrings, antique jewellery and investment gold coins. BIS certified. Private Limited company." },
       { property: "og:title", content: "GJS Jewellers | Crafted for Generations" },
       { property: "og:description", content: "Traditional craftsmanship meets cutting-edge precision at GJS Jewellers, Manalur, Thrissur, Kerala." },
       { property: "og:type", content: "website" },
@@ -455,7 +455,7 @@ function HomePage() {
               {/* Kerala tag */}
               <div className="absolute bottom-6 left-6 z-10 sm:left-10 lg:left-14 xl:left-20">
                 <span className="font-cinzel text-[8px] uppercase tracking-[0.3em]" style={{ color: "rgba(200,150,12,0.4)" }}>
-                  Kerala Â· India
+                  Kerala· India
                 </span>
               </div>
             </div>
@@ -465,7 +465,7 @@ function HomePage() {
               {/* Full image â€” NO heavy dark overlay */}
               <img
                 src={heroImage}
-                alt="Premium 22K gold and diamond necklace â€” GJS Jewellers signature collection"
+                alt="Premium 22K gold and diamond necklace GJS Jewellers signature collection"
                 className="absolute inset-0 h-full w-full object-cover"
                 style={{ objectPosition: "center 15%" }}
               />
@@ -507,7 +507,7 @@ function HomePage() {
                     Diamond Bridal Necklace
                   </p>
                   <p className="mt-1 text-[11px]" style={{ color: "rgba(250,240,220,0.5)" }}>
-                    22K Gold Â· IGI Certified Diamonds
+                    22K Gold IGI Certified Diamonds
                   </p>
                 </div>
               </div>
@@ -529,7 +529,7 @@ function HomePage() {
         <section className="border-b border-border bg-ivory-deep">
           <div className="mx-auto grid max-w-[1440px] grid-cols-2 lg:grid-cols-4">
             <StatCard value={20} suffix="+" label="Years of Experience" delay={0} />
-            <StatCard value={50} suffix=" Cr" label="Financial Framework (â‚¹)" delay={1} />
+            <StatCard value={50} suffix=" Cr" label="Financial Framework" delay={1} />
             <StatCard value={2000} suffix=" Sq.Ft" label="Manufacturing Facility" delay={2} />
             <StatCard value={100} suffix="%" label="BIS Certified Purity" delay={3} />
           </div>
@@ -817,10 +817,10 @@ function HomePage() {
                       <p className="mt-2 text-sm leading-7 text-espresso font-medium">GJS Jewellers Private Limited</p>
                       <p className="text-sm leading-7 text-muted-foreground">
                         12/343, Manjady, Manalur P.O,<br />
-                        Thrissur, Kerala â€“ 680617<br />
+                        Thrissur, Kerala 680617<br />
                         India
                       </p>
-                      <p className="mt-2 text-xs text-muted-foreground italic">(Also: XII/343, Manalur, Thrissur)</p>
+                      <p className="mt-2 text-xs text-muted-foreground italic">(Manalur, Thrissur)</p>
                     </div>
                   </div>
                 </div>
@@ -878,9 +878,9 @@ function HomePage() {
                       { label: "Designation", value: "Managing Director" },
                       { label: "Existing Activity", value: "Manufacturing of Gold Jewellery" },
                       { label: "Location", value: "XII/343, Manalur, Thrissur, Kerala" },
-                      { label: "Professional Experience", value: "20 Years â€” Managerial Experience in Manufacturing Industry" },
-                      { label: "Financial Framework", value: "â‚¹50 Crore" },
-                      { label: "Total Asset Worth", value: "â‚¹6.94 Crore" },
+                      { label: "Professional Experience", value: "20 Years Managerial Experience in Manufacturing Industry" },
+                      { label: "Financial Framework", value: "50 Crore" },
+                      { label: "Total Asset Worth", value: "6.94 Crore" },
                     ].map(({ label, value }) => (
                       <div key={label} className="border-b border-primary-foreground/10 pb-4">
                         <p className="font-cinzel text-[8px] uppercase tracking-[0.2em] text-primary/60">{label}</p>
@@ -921,7 +921,7 @@ function HomePage() {
               </p>
               <div className="mt-6 space-y-2 text-xs text-primary-foreground/45">
                 <p>12/343, Manjady, Manalur P.O</p>
-                <p>Thrissur, Kerala â€“ 680617</p>
+                <p>Thrissur, Kerala 680617</p>
                 <p className="pt-1">+91 9645 969 022</p>
               </div>
             </div>
@@ -943,7 +943,7 @@ function HomePage() {
 
         <div className="border-t border-primary-foreground/10">
           <div className="mx-auto flex max-w-[1440px] flex-col justify-between gap-3 px-5 py-5 text-[9px] uppercase tracking-[0.18em] text-primary-foreground/35 sm:flex-row lg:px-10">
-            <span>Â© 2026 GJS Jewellers Private Limited. All rights reserved.</span>
+            <span>© 2026 GJS Jewellers Private Limited. All rights reserved.</span>
             <span>Manalur· Thrissur· Kerala · India</span>
           </div>
         </div>
