@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5E1A"/>
+      <stop offset="30%" stop-color="#D4A017"/>
+      <stop offset="50%" stop-color="#FCE59F"/>
+      <stop offset="75%" stop-color="#C8960C"/>
+      <stop offset="100%" stop-color="#8B5E1A"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A0F06"/>
+      <stop offset="50%" stop-color="#0E0804"/>
+      <stop offset="100%" stop-color="#050302"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D178"/>
+      <stop offset="50%" stop-color="#8B5E1A"/>
+      <stop offset="100%" stop-color="#D4A017"/>
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#D4A017" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rectangle -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)"/>
+  
+  <!-- Outer luxury gold border -->
+  <rect x="16" y="16" width="480" height="480" rx="98" fill="none" stroke="url(#ringGrad)" stroke-width="8" opacity="0.85"/>
+  <rect x="28" y="28" width="456" height="456" rx="88" fill="none" stroke="url(#ringGrad)" stroke-width="2" opacity="0.45" stroke-dasharray="8 6"/>
+
+  <!-- Diamond Sparkle Icon at Top -->
+  <g transform="translate(256, 120)" filter="url(#goldGlow)">
+    <path d="M0 -30 L10 -8 L32 0 L10 8 L0 30 L-10 8 L-32 0 L-10 -8 Z" fill="url(#goldGrad)"/>
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- GJS Text -->
+  <text x="256" y="295" 
+        font-family="'Cormorant Garamond', 'Cinzel', 'Georgia', serif" 
+        font-size="142" 
+        font-weight="700" 
+        letter-spacing="4" 
+        text-anchor="middle" 
+        fill="url(#goldGrad)" 
+        filter="url(#goldGlow)">
+    GJS
+  </text>
+
+  <!-- JEWELLERS Subtitle -->
+  <text x="264" y="375" 
+        font-family="'Cinzel', 'Trajan Pro', 'Georgia', serif" 
+        font-size="34" 
+        font-weight="600" 
+        letter-spacing="16" 
+        text-anchor="middle" 
+        fill="url(#goldGrad)" 
+        opacity="0.95">
+    JEWELLERS
+  </text>
+</svg>
