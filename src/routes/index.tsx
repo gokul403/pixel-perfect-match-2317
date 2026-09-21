@@ -611,7 +611,7 @@ function HomePage() {
               <p className="mt-1 font-display text-5xl font-semibold text-primary-foreground">GJS</p>
               <p className="font-cinzel text-[8px] uppercase tracking-[0.3em] text-primary">Jewellers</p>
               <div className="mt-3 h-px w-full bg-primary/30" />
-              <p className="mt-2 font-cinzel text-[8px] text-primary-foreground/60 tracking-wide">Manalur Â· Thrissur Â· Kerala</p>
+              <p className="mt-2 font-cinzel text-[8px] text-primary-foreground/60 tracking-wide">Manalur· Thrissur· Kerala</p>
             </div>
           </div>
 
@@ -944,7 +944,7 @@ function HomePage() {
         <div className="border-t border-primary-foreground/10">
           <div className="mx-auto flex max-w-[1440px] flex-col justify-between gap-3 px-5 py-5 text-[9px] uppercase tracking-[0.18em] text-primary-foreground/35 sm:flex-row lg:px-10">
             <span>Â© 2026 GJS Jewellers Private Limited. All rights reserved.</span>
-            <span>Manalur Â· Thrissur Â· Kerala Â· India</span>
+            <span>Manalur· Thrissur· Kerala · India</span>
           </div>
         </div>
       </footer>
