@@ -1,0 +1,1 @@
+- [ ] Replace e-commerce workflows with a static premium GJS presentation and animations
