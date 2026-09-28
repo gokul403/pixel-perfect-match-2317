@@ -10,6 +10,8 @@ import goldCoinsImage from "@/assets/gjs-gold-coins.jpg";
 import antiqueImage from "@/assets/gjs-antique.jpg";
 import legacyNecklaceImage from "@/assets/gjs-necklace.jpg";
 import legacyRingImage from "@/assets/gjs-ring.jpg";
+import ringsCollectionImage from "@/assets/gjs-rings-collection.jpg";
+import machineriesImage from "@/assets/gjs-machineries.jpg";
 
 export const Route = createFileRoute("/")(({
   head: () => ({
@@ -216,11 +218,12 @@ function HomePage() {
   const navLinks = [
     ["Collections", "collections"],
     ["Necklaces", "collections"],
-    ["Rings", "collections"],
-    ["Antique", "collections"],
+    ["Rings", "rings"],
+    ["Machineries", "machineries"],
     ["About Us", "about"],
     ["Contact", "contact"],
   ] as [string, string][];
+
 
   return (
     <div className="min-h-screen bg-background text-foreground" id="top">
@@ -595,6 +598,73 @@ function HomePage() {
           </div>
         </section>
 
+        {/* --- Rings Collection ------------------------------------------- */}
+        <section id="rings" className="mx-auto max-w-[1440px] px-5 py-20 lg:px-10 lg:py-28">
+          <div className="grid gap-12 items-center lg:grid-cols-2 lg:gap-16">
+            {/* Image side */}
+            <div className="reveal-scale relative overflow-hidden">
+              <div className="relative group">
+                <img
+                  src={ringsCollectionImage}
+                  alt="GJS Jewellers premium rings and bangles collection - yellow, rose and white gold"
+                  loading="lazy"
+                  className="w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                  style={{ aspectRatio: "16/10" }}
+                />
+                <div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  style={{ background: "linear-gradient(135deg, rgba(200,150,12,0.08) 0%, transparent 60%)" }}
+                />
+                <div className="corner-bracket corner-bracket-tl" />
+                <div className="corner-bracket corner-bracket-tr" />
+                <div className="corner-bracket corner-bracket-bl" />
+                <div className="corner-bracket corner-bracket-br" />
+              </div>
+              <div
+                className="absolute bottom-6 left-6 border px-5 py-3 backdrop-blur-md"
+                style={{ borderColor: "rgba(200,150,12,0.5)", background: "rgba(14,8,4,0.78)" }}
+              >
+                <p className="font-cinzel text-[8px] uppercase tracking-[0.28em]" style={{ color: "#C8960C" }}>Signature</p>
+                <p className="mt-0.5 font-display text-xl font-medium" style={{ color: "#FAF0DC" }}>Rings &amp; Bangles</p>
+              </div>
+            </div>
+
+            {/* Text side */}
+            <div className="flex flex-col justify-center">
+              <div className="reveal">
+                <SectionEyebrow>Ring Collection</SectionEyebrow>
+                <GoldRule />
+                <h2 className="font-display text-5xl font-medium leading-[0.95] text-espresso sm:text-6xl">
+                  Rings that<br /><em className="not-italic gold-shimmer-text">define you.</em>
+                </h2>
+              </div>
+              <div className="reveal reveal-delay-2 mt-8 space-y-5 text-sm leading-8 text-muted-foreground">
+                <p>
+                  Our ring and bangle collection spans the full spectrum of gold craftsmanship — from intricately textured yellow gold bands to elegant rose gold crossover diamond rings, slim white gold halos, and bold multi-strand statement pieces.
+                </p>
+                <p>
+                  Every piece is precision-manufactured at our 2,000 Sq.Ft facility using CNC technology, ensuring flawless symmetry and consistent finish whether it is a delicate everyday ring or a grand bridal centrepiece.
+                </p>
+              </div>
+              <div className="reveal reveal-delay-3 mt-10 grid grid-cols-2 gap-4">
+                {[
+                  { label: "Yellow Gold Rings", sub: "22K BIS Hallmarked" },
+                  { label: "Rose Gold Rings", sub: "Diamond Pave" },
+                  { label: "White Gold Rings", sub: "Halo & Solitaire" },
+                  { label: "CNC Bangles", sub: "Precision Crafted" },
+                  { label: "Diamond Rings", sub: "IGI Certified" },
+                  { label: "Bridal Sets", sub: "Custom Orders" },
+                ].map(({ label, sub }) => (
+                  <div key={label} className="border border-border p-4 transition-all hover:border-primary/50 hover:shadow-[0_4px_20px_oklch(0.72_0.13_78/0.1)]">
+                    <p className="font-display text-base font-medium text-espresso">{label}</p>
+                    <p className="mt-1 font-cinzel text-[8px] uppercase tracking-[0.18em] text-gold-strong">{sub}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* â”€â”€ About / Introduction â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
         <section id="about" className="mx-auto max-w-[1440px] px-5 py-20 lg:grid lg:grid-cols-2 lg:gap-0 lg:px-10 lg:py-28">
           {/* Image */}
@@ -793,6 +863,101 @@ function HomePage() {
           </div>
         </section>
 
+
+        {/* --- Machineries Section ---------------------------------------- */}
+        <section id="machineries" className="bg-espresso py-20 lg:py-28 overflow-hidden">
+          <div className="mx-auto max-w-[1440px] px-5 lg:px-10">
+            <div className="reveal mb-14 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <SectionEyebrow>Our Facility</SectionEyebrow>
+                <GoldRule />
+                <h2 className="font-display text-5xl font-medium leading-[0.95] text-primary-foreground sm:text-6xl">
+                  Precision<br /><em className="not-italic gold-shimmer-text">Machineries.</em>
+                </h2>
+              </div>
+              <p className="reveal reveal-delay-2 max-w-[38ch] text-sm leading-7" style={{ color: "rgba(250,240,220,0.55)" }}>
+                State-of-the-art CNC and precision equipment power every piece we craft — ensuring flawless quality at scale.
+              </p>
+            </div>
+
+            {/* Full-width featured image */}
+            <div className="reveal relative overflow-hidden mb-12">
+              <img
+                src={machineriesImage}
+                alt="GJS Jewellers manufacturing machineries - CNC stone setter, rolling mill press, and CNC machining centre"
+                loading="lazy"
+                className="w-full object-cover"
+                style={{ aspectRatio: "16/7", objectPosition: "center" }}
+              />
+              <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(22,12,5,0.35) 0%, transparent 30%, transparent 70%, rgba(22,12,5,0.35) 100%)" }} />
+              <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(22,12,5,0.2) 0%, transparent 20%, transparent 80%, rgba(22,12,5,0.4) 100%)" }} />
+              <div className="corner-bracket corner-bracket-tl" style={{ borderColor: "rgba(200,150,12,0.6)" }} />
+              <div className="corner-bracket corner-bracket-tr" style={{ borderColor: "rgba(200,150,12,0.6)" }} />
+              <div className="corner-bracket corner-bracket-bl" style={{ borderColor: "rgba(200,150,12,0.6)" }} />
+              <div className="corner-bracket corner-bracket-br" style={{ borderColor: "rgba(200,150,12,0.6)" }} />
+              <div
+                className="absolute top-6 left-6 border px-4 py-2"
+                style={{ borderColor: "rgba(200,150,12,0.55)", background: "rgba(14,8,4,0.82)" }}
+              >
+                <p className="font-cinzel text-[8px] uppercase tracking-[0.3em]" style={{ color: "#C8960C" }}>GJS Jewellers</p>
+                <p className="font-cinzel text-[9px] uppercase tracking-[0.2em]" style={{ color: "rgba(250,240,220,0.7)" }}>Machineries</p>
+              </div>
+            </div>
+
+            {/* Machine cards */}
+            <div className="grid gap-5 sm:grid-cols-3">
+              {[
+                {
+                  num: "01",
+                  title: "CNC Stone Setting Machine",
+                  text: "Precision micro-positioning for accurate stone placement in diamond jewellery. Ensures consistent bezel, prong, and pave settings with micron-level accuracy.",
+                  delay: 1,
+                },
+                {
+                  num: "02",
+                  title: "Rolling Mill Press",
+                  text: "Amal Diet Maker dual-head rolling mill for uniform sheet and wire formation. Delivers consistent thickness and surface finish for bangles, bands, and decorative patterns.",
+                  delay: 2,
+                },
+                {
+                  num: "03",
+                  title: "CNC Machining Centre",
+                  text: "AM 7 Made in India fully automated CNC machining centre with digital control panel. Drives high-volume precision manufacturing of rings, bangles, and jewellery components.",
+                  delay: 3,
+                },
+              ].map(({ num, title, text, delay }) => (
+                <div
+                  key={num}
+                  className={`reveal reveal-delay-${delay} border p-8 transition-all hover:border-primary/60 hover:shadow-[0_8px_40px_oklch(0.72_0.13_78/0.15)]`}
+                  style={{ borderColor: "rgba(200,150,12,0.2)", background: "rgba(255,255,255,0.03)" }}
+                >
+                  <span className="gold-shimmer-text font-display text-5xl font-semibold">{num}</span>
+                  <h3 className="mt-5 font-display text-2xl font-medium" style={{ color: "#FAF0DC" }}>{title}</h3>
+                  <div className="my-4 h-px w-8" style={{ background: "linear-gradient(90deg, #8B5E1A, #F0C84A, #8B5E1A)" }} />
+                  <p className="text-sm leading-7" style={{ color: "rgba(250,240,220,0.55)" }}>{text}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Bottom stat bar */}
+            <div
+              className="reveal reveal-delay-4 mt-12 grid grid-cols-2 gap-px border border-primary/20 sm:grid-cols-4"
+              style={{ background: "rgba(200,150,12,0.12)" }}
+            >
+              {[
+                { label: "Facility Size", value: "2,000 Sq.Ft" },
+                { label: "Technology", value: "CNC & Automation" },
+                { label: "QC Standard", value: "BIS Hallmarked" },
+                { label: "Diamonds", value: "IGI Certified" },
+              ].map(({ label, value }) => (
+                <div key={label} className="px-6 py-5" style={{ background: "rgba(22,12,5,0.9)" }}>
+                  <p className="font-cinzel text-[8px] uppercase tracking-[0.22em]" style={{ color: "rgba(200,150,12,0.6)" }}>{label}</p>
+                  <p className="mt-1 font-display text-xl font-medium" style={{ color: "#FAF0DC" }}>{value}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
         {/* â”€â”€ Contact Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
         <section id="contact" className="bg-ivory-deep py-20 lg:py-28">
           <div className="mx-auto max-w-[1440px] px-5 lg:px-10">
